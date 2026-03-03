@@ -211,7 +211,7 @@ function populateSkills() {
         '.NET', 'Node.js', 'NestJS', 'React', 'PostgreSQL',
         'SQL Server', 'Docker', 'Python', 'TypeScript', 'Prisma',
         'REST APIs', 'GraphQL', 'MongoDB', 'Redis', 'AWS',
-        // أضف السطر ده
+
         'LeetCode (Problem Solving)'
     ];
 
@@ -219,7 +219,7 @@ function populateSkills() {
         const skillElement = document.createElement('div');
         skillElement.className = 'skill-item';
 
-        // لو LeetCode, ضيف اللينك بتاعك
+
         if (skill.includes('LeetCode')) {
             skillElement.style.cursor = 'pointer';
             skillElement.setAttribute('data-leetcode', 'true');
@@ -239,28 +239,30 @@ function populateProjects() {
     if (!projectsGrid) return;
 
     const projects = [
+
         {
-            title: 'Meeting Room FullStack',
-            description: 'A comprehensive booking platform with real-time availability. Built with React, Node.js, and PostgreSQL.',
-            tech: ['React', 'Node.js', 'PostgreSQL', 'Socket.io'],
+            title: 'Video Meeting Application',
+            description: 'Full-stack video conferencing app with real-time communication using WebRTC and Socket.IO. Features room management, screen sharing, and JWT authentication.',
+            tech: ['.Net', 'React', 'SqlServer', 'Ef', 'WebRTC', 'Socket.IO', 'JWT', 'TypeScript', 'Docker'],
             link: 'https://github.com/Abdelrhman612/Meeting-Room-FullStack'
         },
+
         {
             title: 'AI Exam Generator',
             description: 'FullStack application that parses PDFs to generate interactive exams using AI. Showcases complex file handling.',
-            tech: ['React', 'Node.js', 'OpenAI', 'PDF.js'],
+            tech: ['.Net', 'FastApi', 'React', 'Node.js', 'OpenAI', 'PDF.js', 'Docker'],
             link: 'https://github.com/Abdelrhman612/Pdf-ExamAi-FullStack'
         },
         {
             title: 'Gamified Learning Platform',
             description: 'Interactive learning experience with gamification elements to boost user engagement.',
-            tech: ['Node.js', 'React', 'MongoDB', 'Express'],
+            tech: ['Node.js', 'React', 'Next.js', 'Postgrs', 'NestJs'],
             link: 'https://github.com/Abdelrhman612/gamified-learning-platform-fullstack'
         },
         {
             title: 'E-commerce Backend (NestJS)',
-            description: 'Scalable backend API for an e-commerce platform featuring authentication, order processing, and Docker.',
-            tech: ['NestJS', 'PostgreSQL', 'Docker', 'JWT'],
+            description: 'Scalable backend API for an e-commerce platform featuring authentication, order processing.',
+            tech: ['NestJS', 'PostgreSQL', 'JWT'],
             link: 'https://github.com/Abdelrhman612/Ecommerce-Back-End-Nest.JS'
         }
     ];
@@ -300,7 +302,7 @@ function setupProjectLinkTracking() {
         link.addEventListener('click', function (e) {
             console.log('Opening project link:', this.href);
 
-            // يمكنك إضافة تتبع هنا (Google Analytics, etc)
+
             trackProjectClick(this.href);
         });
     });
@@ -456,10 +458,9 @@ function setupCVTracking() {
 
     cvLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            // تسجيل عملية التحميل
             console.log('CV downloaded');
 
-            // لو عاوز تعمل تتبع في Google Analytics
+
             if (typeof gtag !== 'undefined') {
                 gtag('event', 'cv_download', {
                     'event_category': 'engagement',
@@ -467,7 +468,6 @@ function setupCVTracking() {
                 });
             }
 
-            // تخزين في localStorage
             const downloads = JSON.parse(localStorage.getItem('cv_downloads') || '[]');
             downloads.push({
                 timestamp: new Date().toISOString(),
@@ -475,7 +475,6 @@ function setupCVTracking() {
             });
             localStorage.setItem('cv_downloads', JSON.stringify(downloads.slice(-5)));
 
-            // رسالة تأكيد (اختياري)
             showNotification('Downloading CV...', 'success');
         });
     });
