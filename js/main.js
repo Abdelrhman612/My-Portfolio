@@ -265,6 +265,12 @@ function populateProjects() {
             tech: ['NestJS', 'PostgreSQL', 'JWT'],
             link: 'https://github.com/Abdelrhman612/Ecommerce-Back-End-Nest.JS'
         }
+        {
+            title: 'Book Library Frontend',
+            description: 'A modern frontend application for a Book Library built with React, TypeScript, and Vite. Features user authentication, book management, and responsive design.',
+            tech: ['React 19', 'TypeScript', 'Vite', 'Bootstrap 5', 'React Router v7', 'Axios'],
+            link: 'https://github.com/Abdelrhman612/book-library-frontend-reactjs'
+        }
     ];
 
     projects.forEach(project => {
