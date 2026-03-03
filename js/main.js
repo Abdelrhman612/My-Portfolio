@@ -260,17 +260,24 @@ function populateProjects() {
             link: 'https://github.com/Abdelrhman612/gamified-learning-platform-fullstack'
         },
         {
-            title: 'E-commerce Backend (NestJS)',
-            description: 'Scalable backend API for an e-commerce platform featuring authentication, order processing.',
-            tech: ['NestJS', 'PostgreSQL', 'JWT'],
-            link: 'https://github.com/Abdelrhman612/Ecommerce-Back-End-Nest.JS'
+            title: 'Book Library Backend System',
+            description: '🔧 Robust backend system for a book library built with NestJS. Features JWT authentication, role-based access control (user/admin), Cloudinary image upload, and email-based password recovery.',
+            tech: ['NestJS', 'PostgreSQL', 'Prisma', 'JWT', 'Cloudinary', 'Passport', 'Nodemailer', 'TypeScript'],
+            link: 'https://github.com/Abdelrhman612/Book-Library-Backend-NestJs'
         },
         {
             title: 'Book Library Frontend',
             description: 'A modern frontend application for a Book Library built with React, TypeScript, and Vite. Features user authentication, book management, and responsive design.',
             tech: ['React 19', 'TypeScript', 'Vite', 'Bootstrap 5', 'React Router v7', 'Axios'],
-            link: 'https://github.com/Abdelrhman612/book-library-frontend-reactjs'
-        }
+            link: 'https://github.com/Abdelrhman612/Book-Library-Frontend-ReactJs'
+        },
+        {
+            title: 'E-commerce Backend (NestJS)',
+            description: 'Scalable backend API for an e-commerce platform featuring authentication, order processing.',
+            tech: ['NestJS', 'PostgreSQL', 'JWT'],
+            link: 'https://github.com/Abdelrhman612/Ecommerce-Back-End-Nest.JS'
+        },
+
     ];
 
     projects.forEach(project => {
