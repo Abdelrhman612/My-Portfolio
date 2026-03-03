@@ -261,7 +261,7 @@ function populateProjects() {
         },
         {
             title: 'Book Library Backend System',
-            description: '🔧 Robust backend system for a book library built with NestJS. Features JWT authentication, role-based access control (user/admin), Cloudinary image upload, and email-based password recovery.',
+            description: 'Robust backend system for a book library built with NestJS. Features JWT authentication, role-based access control (user/admin), Cloudinary image upload, and email-based password recovery.',
             tech: ['NestJS', 'PostgreSQL', 'Prisma', 'JWT', 'Cloudinary', 'Passport', 'Nodemailer', 'TypeScript'],
             link: 'https://github.com/Abdelrhman612/Book-Library-Backend-NestJs'
         },
