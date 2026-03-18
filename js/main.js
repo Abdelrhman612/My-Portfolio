@@ -211,8 +211,7 @@ function populateSkills() {
         '.NET', 'Node.js', 'NestJS', 'React', 'PostgreSQL',
         'SQL Server', 'Docker', 'Python', 'TypeScript', 'Prisma',
         'REST APIs', 'GraphQL', 'MongoDB', 'Redis', 'AWS',
-
-        'LeetCode (Problem Solving)'
+        'Problem Solving'
     ];
 
     skills.forEach(skill => {
